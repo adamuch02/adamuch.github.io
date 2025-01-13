@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Canvas | ASE </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Canvas | ASE ">
+      
+      <meta name="description" content="The drawing canvas to be used with this implementation of BOOSE">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE">
+            ASE
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ASE.Canvas">
+
+
+
+  <h1 id="ASE_Canvas" data-uid="ASE.Canvas" class="text-break">
+Class Canvas  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ASE.html">ASE</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ASE.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The drawing canvas to be used with this implementation of BOOSE</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Canvas : ICanvas</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Canvas</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="ASE.ICanvas.html">ICanvas</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ASE_Canvas__ctor_" data-uid="ASE.Canvas.#ctor*"></a>
+
+  <h3 id="ASE_Canvas__ctor_Blazor_Extensions_BECanvasComponent_Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_" data-uid="ASE.Canvas.#ctor(Blazor.Extensions.BECanvasComponent,Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext)">
+  Canvas(BECanvasComponent, Canvas2DContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The constructor takes both the component and context as arguments as generating a context is done asynchronously
+which should be avoided in constructors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Canvas(BECanvasComponent component, Canvas2DContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="Blazor.Extensions.BECanvasComponent.html">BECanvasComponent</a></dt>
+    <dd><p>The html canvas element to draw to</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.html">Canvas2DContext</a></dt>
+    <dd><p>The context of the drawing canvas</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ASE_Canvas_Component_" data-uid="ASE.Canvas.Component*"></a>
+
+  <h3 id="ASE_Canvas_Component" data-uid="ASE.Canvas.Component">
+  Component
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><returns>The reference to the html5 element</returns></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BECanvasComponent Component { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Blazor.Extensions.BECanvasComponent.html">BECanvasComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_Context_" data-uid="ASE.Canvas.Context*"></a>
+
+  <h3 id="ASE_Canvas_Context" data-uid="ASE.Canvas.Context">
+  Context
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><returns>Handle for drawing to the html canvas</returns></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Canvas2DContext Context { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.html">Canvas2DContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_XPos_" data-uid="ASE.Canvas.XPos*"></a>
+
+  <h3 id="ASE_Canvas_XPos" data-uid="ASE.Canvas.XPos">
+  XPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><returns>The x axis position of the pen on the canvas relative to the top left corner</returns></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double XPos { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_YPos_" data-uid="ASE.Canvas.YPos*"></a>
+
+  <h3 id="ASE_Canvas_YPos" data-uid="ASE.Canvas.YPos">
+  YPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><returns>The y axis position of the pen on the canvas relative to the top left corner</returns></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double YPos { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ASE_Canvas_Circle_" data-uid="ASE.Canvas.Circle*"></a>
+
+  <h3 id="ASE_Canvas_Circle_System_Double_System_Boolean_" data-uid="ASE.Canvas.Circle(System.Double,System.Boolean)">
+  Circle(double, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a circle to the canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Circle(double radius, bool filled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The radius of the circle in pixels</p>
+</dd>
+    <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The Circle will be filled if set to true</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_Clear_" data-uid="ASE.Canvas.Clear*"></a>
+
+  <h3 id="ASE_Canvas_Clear" data-uid="ASE.Canvas.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Clear()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_DrawTo_" data-uid="ASE.Canvas.DrawTo*"></a>
+
+  <h3 id="ASE_Canvas_DrawTo_System_Double_System_Double_" data-uid="ASE.Canvas.DrawTo(System.Double,System.Double)">
+  DrawTo(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws line from current position to the one specified</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DrawTo(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>x coordinate to draw to</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>y coordinate to draw to</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_GetBitmap_" data-uid="ASE.Canvas.GetBitmap*"></a>
+
+  <h3 id="ASE_Canvas_GetBitmap" data-uid="ASE.Canvas.GetBitmap">
+  GetBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Temporary - returns the context of the canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetBitmap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The Canvas2DContext of the canvas</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_MoveTo_" data-uid="ASE.Canvas.MoveTo*"></a>
+
+  <h3 id="ASE_Canvas_MoveTo_System_Double_System_Double_" data-uid="ASE.Canvas.MoveTo(System.Double,System.Double)">
+  MoveTo(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves pen to specified position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task MoveTo(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>x coordinate to move to</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>y coordinate to move to</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_Rect_" data-uid="ASE.Canvas.Rect*"></a>
+
+  <h3 id="ASE_Canvas_Rect_System_Double_System_Double_System_Boolean_" data-uid="ASE.Canvas.Rect(System.Double,System.Double,System.Boolean)">
+  Rect(double, double, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws rectangle on canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Rect(double width, double height, bool filled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The width of the rectangle</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The height of the rectangle</p>
+</dd>
+    <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Rectangle will be filled if set to true</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_Reset_" data-uid="ASE.Canvas.Reset*"></a>
+
+  <h3 id="ASE_Canvas_Reset" data-uid="ASE.Canvas.Reset">
+  Reset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears canvas and returns pen to top left corner</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Reset()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_Set_" data-uid="ASE.Canvas.Set*"></a>
+
+  <h3 id="ASE_Canvas_Set_System_Double_System_Double_" data-uid="ASE.Canvas.Set(System.Double,System.Double)">
+  Set(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resizes canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Set(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Width of canvas</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Height of canvas</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Returns completed task for use with async methods</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_SetColour_" data-uid="ASE.Canvas.SetColour*"></a>
+
+  <h3 id="ASE_Canvas_SetColour_System_Double_System_Double_System_Double_" data-uid="ASE.Canvas.SetColour(System.Double,System.Double,System.Double)">
+  SetColour(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets pen colour to rgb value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetColour(double red, double green, double blue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>red</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>r value 0-255</p>
+</dd>
+    <dt><code>green</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>g value 0-255</p>
+</dd>
+    <dt><code>blue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>b value 0-255</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_Tri_" data-uid="ASE.Canvas.Tri*"></a>
+
+  <h3 id="ASE_Canvas_Tri_System_Double_System_Double_" data-uid="ASE.Canvas.Tri(System.Double,System.Double)">
+  Tri(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws triangle to canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Tri(double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The width of the triangle</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The height of the triangle</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Canvas_WriteText_" data-uid="ASE.Canvas.WriteText*"></a>
+
+  <h3 id="ASE_Canvas_WriteText_System_String_" data-uid="ASE.Canvas.WriteText(System.String)">
+  WriteText(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a message to the canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task WriteText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text to be written</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Canvas.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

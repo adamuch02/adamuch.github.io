@@ -1,0 +1,3711 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Canvas2DContext | ASE </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Canvas2DContext | ASE ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE">
+            ASE
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext">
+
+
+
+  <h1 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext" class="text-break">
+Class Canvas2DContext  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Blazor.html">Blazor</a>.<a class="xref" href="Blazor.Extensions.html">Extensions</a>.<a class="xref" href="Blazor.Extensions.Canvas.html">Canvas</a>.<a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.html">Canvas2D</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Blazor.Extensions.Canvas.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Canvas2DContext : RenderingContext, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Blazor.Extensions.RenderingContext.html">RenderingContext</a></div>
+      <div><span class="xref">Canvas2DContext</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_ExtendedInitializeAsync">RenderingContext.ExtendedInitializeAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_BeginBatchAsync">RenderingContext.BeginBatchAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_EndBatchAsync">RenderingContext.EndBatchAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_BatchCallAsync_System_String_System_Boolean_System_Object___">RenderingContext.BatchCallAsync(string, bool, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_GetPropertyAsync__1_System_String_">RenderingContext.GetPropertyAsync&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_CallMethod__1_System_String_">RenderingContext.CallMethod&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_CallMethodAsync__1_System_String_">RenderingContext.CallMethodAsync&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_CallMethod__1_System_String_System_Object___">RenderingContext.CallMethod&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_CallMethodAsync__1_System_String_System_Object___">RenderingContext.CallMethodAsync&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_Dispose">RenderingContext.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blazor.Extensions.RenderingContext.html#Blazor_Extensions_RenderingContext_Canvas">RenderingContext.Canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Direction_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Direction*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Direction" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Direction">
+  Direction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextDirection Direction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.TextDirection.html">TextDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillStyle_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillStyle*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillStyle" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillStyle">
+  FillStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object FillStyle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Font_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Font*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Font" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Font">
+  Font
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Font { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_GlobalAlpha_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.GlobalAlpha*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_GlobalAlpha" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.GlobalAlpha">
+  GlobalAlpha
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlobalAlpha { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineCap_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineCap*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineCap" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineCap">
+  LineCap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineCap LineCap { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.LineCap.html">LineCap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineDashOffset_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineDashOffset*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineDashOffset" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineDashOffset">
+  LineDashOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LineDashOffset { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineJoin_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineJoin*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineJoin" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineJoin">
+  LineJoin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineJoin LineJoin { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.LineJoin.html">LineJoin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineWidth_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineWidth*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineWidth" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineWidth">
+  LineWidth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LineWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MiterLimit_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MiterLimit*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MiterLimit" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MiterLimit">
+  MiterLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MiterLimit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ShadowBlur_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ShadowBlur*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ShadowBlur" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ShadowBlur">
+  ShadowBlur
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ShadowBlur { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ShadowColor_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ShadowColor*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ShadowColor" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ShadowColor">
+  ShadowColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShadowColor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ShadowOffsetX_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ShadowOffsetX*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ShadowOffsetX" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ShadowOffsetX">
+  ShadowOffsetX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ShadowOffsetX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ShadowOffsetY_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ShadowOffsetY*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ShadowOffsetY" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ShadowOffsetY">
+  ShadowOffsetY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ShadowOffsetY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeStyle_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeStyle*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeStyle" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeStyle">
+  StrokeStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StrokeStyle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_TextAlign_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.TextAlign*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_TextAlign" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.TextAlign">
+  TextAlign
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextAlign TextAlign { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.TextAlign.html">TextAlign</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_TextBaseline_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.TextBaseline*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_TextBaseline" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.TextBaseline">
+  TextBaseline
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextBaseline TextBaseline { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.TextBaseline.html">TextBaseline</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Arc_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Arc*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Arc_System_Double_System_Double_System_Double_System_Double_System_Double_System_Nullable_System_Boolean__" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Arc(System.Double,System.Double,System.Double,System.Double,System.Double,System.Nullable{System.Boolean})">
+  Arc(double, double, double, double, double, bool?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Arc(double x, double y, double radius, double startAngle, double endAngle, bool? anticlockwise = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>startAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>endAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>anticlockwise</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ArcAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ArcAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ArcAsync_System_Double_System_Double_System_Double_System_Double_System_Double_System_Nullable_System_Boolean__" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ArcAsync(System.Double,System.Double,System.Double,System.Double,System.Double,System.Nullable{System.Boolean})">
+  ArcAsync(double, double, double, double, double, bool?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ArcAsync(double x, double y, double radius, double startAngle, double endAngle, bool? anticlockwise = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>startAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>endAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>anticlockwise</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ArcTo_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ArcTo*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ArcTo_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ArcTo(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  ArcTo(double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void ArcTo(double x1, double y1, double x2, double y2, double radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ArcToAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ArcToAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ArcToAsync_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ArcToAsync(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  ArcToAsync(double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ArcToAsync(double x1, double y1, double x2, double y2, double radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_BeginPath_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.BeginPath*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_BeginPath" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.BeginPath">
+  BeginPath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void BeginPath()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_BeginPathAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.BeginPathAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_BeginPathAsync" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.BeginPathAsync">
+  BeginPathAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BeginPathAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_BezierCurveTo_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.BezierCurveTo*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_BezierCurveTo_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.BezierCurveTo(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+  BezierCurveTo(double, double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void BezierCurveTo(double cp1X, double cp1Y, double cp2X, double cp2Y, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cp1X</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>cp1Y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>cp2X</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>cp2Y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_BezierCurveToAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.BezierCurveToAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_BezierCurveToAsync_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.BezierCurveToAsync(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+  BezierCurveToAsync(double, double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BezierCurveToAsync(double cp1X, double cp1Y, double cp2X, double cp2Y, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cp1X</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>cp1Y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>cp2X</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>cp2Y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClearRect_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClearRect*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClearRect_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClearRect(System.Double,System.Double,System.Double,System.Double)">
+  ClearRect(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void ClearRect(double x, double y, double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClearRectAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClearRectAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClearRectAsync_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClearRectAsync(System.Double,System.Double,System.Double,System.Double)">
+  ClearRectAsync(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ClearRectAsync(double x, double y, double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Clip_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Clip*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Clip" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Clip">
+  Clip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Clip()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClipAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClipAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClipAsync" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClipAsync">
+  ClipAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ClipAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClosePath_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClosePath*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClosePath" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClosePath">
+  ClosePath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void ClosePath()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClosePathAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClosePathAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ClosePathAsync" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ClosePathAsync">
+  ClosePathAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ClosePathAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_CreatePatternAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.CreatePatternAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_CreatePatternAsync_Microsoft_AspNetCore_Components_ElementReference_Blazor_Extensions_Canvas_Canvas2D_RepeatPattern_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.CreatePatternAsync(Microsoft.AspNetCore.Components.ElementReference,Blazor.Extensions.Canvas.Canvas2D.RepeatPattern)">
+  CreatePatternAsync(ElementReference, RepeatPattern)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; CreatePatternAsync(ElementReference image, RepeatPattern repeat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>image</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.elementreference">ElementReference</a></dt>
+    <dd></dd>
+    <dt><code>repeat</code> <a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.RepeatPattern.html">RepeatPattern</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawFocusIfNeeded_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawFocusIfNeeded*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawFocusIfNeeded_Microsoft_AspNetCore_Components_ElementReference_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawFocusIfNeeded(Microsoft.AspNetCore.Components.ElementReference)">
+  DrawFocusIfNeeded(ElementReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void DrawFocusIfNeeded(ElementReference elementReference)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementReference</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.elementreference">ElementReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawFocusIfNeededAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawFocusIfNeededAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawFocusIfNeededAsync_Microsoft_AspNetCore_Components_ElementReference_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawFocusIfNeededAsync(Microsoft.AspNetCore.Components.ElementReference)">
+  DrawFocusIfNeededAsync(ElementReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DrawFocusIfNeededAsync(ElementReference elementReference)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementReference</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.elementreference">ElementReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawImageAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawImageAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawImageAsync_Microsoft_AspNetCore_Components_ElementReference_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawImageAsync(Microsoft.AspNetCore.Components.ElementReference,System.Double,System.Double)">
+  DrawImageAsync(ElementReference, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DrawImageAsync(ElementReference elementReference, double dx, double dy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementReference</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.elementreference">ElementReference</a></dt>
+    <dd></dd>
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawImageAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawImageAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawImageAsync_Microsoft_AspNetCore_Components_ElementReference_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawImageAsync(Microsoft.AspNetCore.Components.ElementReference,System.Double,System.Double,System.Double,System.Double)">
+  DrawImageAsync(ElementReference, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DrawImageAsync(ElementReference elementReference, double dx, double dy, double dWidth, double dHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementReference</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.elementreference">ElementReference</a></dt>
+    <dd></dd>
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawImageAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawImageAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_DrawImageAsync_Microsoft_AspNetCore_Components_ElementReference_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.DrawImageAsync(Microsoft.AspNetCore.Components.ElementReference,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+  DrawImageAsync(ElementReference, double, double, double, double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DrawImageAsync(ElementReference elementReference, double sx, double sy, double sWidth, double sHeight, double dx, double dy, double dWidth, double dHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementReference</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.elementreference">ElementReference</a></dt>
+    <dd></dd>
+    <dt><code>sx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>sy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>sWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>sHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Fill_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Fill*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Fill" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Fill">
+  Fill()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Fill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillAsync" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillAsync">
+  FillAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task FillAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillRect_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillRect*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillRect_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillRect(System.Double,System.Double,System.Double,System.Double)">
+  FillRect(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void FillRect(double x, double y, double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillRectAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillRectAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillRectAsync_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillRectAsync(System.Double,System.Double,System.Double,System.Double)">
+  FillRectAsync(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task FillRectAsync(double x, double y, double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillText_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillText*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillText_System_String_System_Double_System_Double_System_Nullable_System_Double__" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillText(System.String,System.Double,System.Double,System.Nullable{System.Double})">
+  FillText(string, double, double, double?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void FillText(string text, double x, double y, double? maxWidth = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>maxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillTextAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillTextAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_FillTextAsync_System_String_System_Double_System_Double_System_Nullable_System_Double__" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.FillTextAsync(System.String,System.Double,System.Double,System.Nullable{System.Double})">
+  FillTextAsync(string, double, double, double?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task FillTextAsync(string text, double x, double y, double? maxWidth = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>maxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_GetLineDash_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.GetLineDash*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_GetLineDash" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.GetLineDash">
+  GetLineDash()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public float[] GetLineDash()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_GetLineDashAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.GetLineDashAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_GetLineDashAsync" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.GetLineDashAsync">
+  GetLineDashAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;float[]&gt; GetLineDashAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_IsPointInPath_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.IsPointInPath*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_IsPointInPath_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.IsPointInPath(System.Double,System.Double)">
+  IsPointInPath(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public bool IsPointInPath(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_IsPointInPathAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.IsPointInPathAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_IsPointInPathAsync_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.IsPointInPathAsync(System.Double,System.Double)">
+  IsPointInPathAsync(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; IsPointInPathAsync(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_IsPointInStroke_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.IsPointInStroke*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_IsPointInStroke_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.IsPointInStroke(System.Double,System.Double)">
+  IsPointInStroke(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public bool IsPointInStroke(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_IsPointInStrokeAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.IsPointInStrokeAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_IsPointInStrokeAsync_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.IsPointInStrokeAsync(System.Double,System.Double)">
+  IsPointInStrokeAsync(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; IsPointInStrokeAsync(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineTo_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineTo*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineTo_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineTo(System.Double,System.Double)">
+  LineTo(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void LineTo(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineToAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineToAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_LineToAsync_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.LineToAsync(System.Double,System.Double)">
+  LineToAsync(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LineToAsync(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MeasureText_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MeasureText*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MeasureText_System_String_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MeasureText(System.String)">
+  MeasureText(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public TextMetrics MeasureText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Blazor.Extensions.Canvas.Model.TextMetrics.html">TextMetrics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MeasureTextAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MeasureTextAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MeasureTextAsync_System_String_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MeasureTextAsync(System.String)">
+  MeasureTextAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TextMetrics&gt; MeasureTextAsync(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Blazor.Extensions.Canvas.Model.TextMetrics.html">TextMetrics</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MoveTo_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MoveTo*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MoveTo_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MoveTo(System.Double,System.Double)">
+  MoveTo(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void MoveTo(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MoveToAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MoveToAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_MoveToAsync_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.MoveToAsync(System.Double,System.Double)">
+  MoveToAsync(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task MoveToAsync(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_QuadraticCurveTo_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.QuadraticCurveTo*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_QuadraticCurveTo_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.QuadraticCurveTo(System.Double,System.Double,System.Double,System.Double)">
+  QuadraticCurveTo(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void QuadraticCurveTo(double cpx, double cpy, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cpx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>cpy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_QuadraticCurveToAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.QuadraticCurveToAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_QuadraticCurveToAsync_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.QuadraticCurveToAsync(System.Double,System.Double,System.Double,System.Double)">
+  QuadraticCurveToAsync(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task QuadraticCurveToAsync(double cpx, double cpy, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cpx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>cpy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Rect_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Rect*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Rect_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Rect(System.Double,System.Double,System.Double,System.Double)">
+  Rect(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Rect(double x, double y, double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_RectAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.RectAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_RectAsync_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.RectAsync(System.Double,System.Double,System.Double,System.Double)">
+  RectAsync(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RectAsync(double x, double y, double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Restore_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Restore*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Restore" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Restore">
+  Restore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Restore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_RestoreAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.RestoreAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_RestoreAsync" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.RestoreAsync">
+  RestoreAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RestoreAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Rotate_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Rotate*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Rotate_System_Single_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Rotate(System.Single)">
+  Rotate(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Rotate(float angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_RotateAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.RotateAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_RotateAsync_System_Single_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.RotateAsync(System.Single)">
+  RotateAsync(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RotateAsync(float angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Save_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Save*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Save" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Save">
+  Save()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Save()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SaveAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SaveAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SaveAsync" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SaveAsync">
+  SaveAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SaveAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Scale_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Scale*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Scale_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Scale(System.Double,System.Double)">
+  Scale(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Scale(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ScaleAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ScaleAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ScaleAsync_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ScaleAsync(System.Double,System.Double)">
+  ScaleAsync(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ScaleAsync(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ScrollPathIntoView_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ScrollPathIntoView*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ScrollPathIntoView" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ScrollPathIntoView">
+  ScrollPathIntoView()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void ScrollPathIntoView()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ScrollPathIntoViewAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ScrollPathIntoViewAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_ScrollPathIntoViewAsync" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.ScrollPathIntoViewAsync">
+  ScrollPathIntoViewAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ScrollPathIntoViewAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetDirectionAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetDirectionAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetDirectionAsync_Blazor_Extensions_Canvas_Canvas2D_TextDirection_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetDirectionAsync(Blazor.Extensions.Canvas.Canvas2D.TextDirection)">
+  SetDirectionAsync(TextDirection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetDirectionAsync(TextDirection value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.TextDirection.html">TextDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetFillStyleAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetFillStyleAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetFillStyleAsync_System_Object_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetFillStyleAsync(System.Object)">
+  SetFillStyleAsync(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetFillStyleAsync(object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetFontAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetFontAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetFontAsync_System_String_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetFontAsync(System.String)">
+  SetFontAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetFontAsync(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetGlobalAlphaAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetGlobalAlphaAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetGlobalAlphaAsync_System_Single_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetGlobalAlphaAsync(System.Single)">
+  SetGlobalAlphaAsync(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetGlobalAlphaAsync(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineCapAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineCapAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineCapAsync_Blazor_Extensions_Canvas_Canvas2D_LineCap_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineCapAsync(Blazor.Extensions.Canvas.Canvas2D.LineCap)">
+  SetLineCapAsync(LineCap)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetLineCapAsync(LineCap value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.LineCap.html">LineCap</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineDash_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineDash*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineDash_System_Single___" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineDash(System.Single[])">
+  SetLineDash(float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void SetLineDash(float[] segments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>segments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineDashAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineDashAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineDashAsync_System_Single___" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineDashAsync(System.Single[])">
+  SetLineDashAsync(float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetLineDashAsync(float[] segments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>segments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineDashOffsetAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineDashOffsetAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineDashOffsetAsync_System_Single_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineDashOffsetAsync(System.Single)">
+  SetLineDashOffsetAsync(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetLineDashOffsetAsync(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineJoinAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineJoinAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineJoinAsync_Blazor_Extensions_Canvas_Canvas2D_LineJoin_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineJoinAsync(Blazor.Extensions.Canvas.Canvas2D.LineJoin)">
+  SetLineJoinAsync(LineJoin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetLineJoinAsync(LineJoin value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.LineJoin.html">LineJoin</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineWidthAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineWidthAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetLineWidthAsync_System_Single_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetLineWidthAsync(System.Single)">
+  SetLineWidthAsync(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetLineWidthAsync(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetMiterLimitAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetMiterLimitAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetMiterLimitAsync_System_Single_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetMiterLimitAsync(System.Single)">
+  SetMiterLimitAsync(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetMiterLimitAsync(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetShadowBlurAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetShadowBlurAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetShadowBlurAsync_System_Single_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetShadowBlurAsync(System.Single)">
+  SetShadowBlurAsync(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetShadowBlurAsync(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetShadowColorAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetShadowColorAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetShadowColorAsync_System_String_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetShadowColorAsync(System.String)">
+  SetShadowColorAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetShadowColorAsync(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetShadowOffsetXAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetShadowOffsetXAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetShadowOffsetXAsync_System_Single_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetShadowOffsetXAsync(System.Single)">
+  SetShadowOffsetXAsync(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetShadowOffsetXAsync(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetShadowOffsetYAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetShadowOffsetYAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetShadowOffsetYAsync_System_Single_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetShadowOffsetYAsync(System.Single)">
+  SetShadowOffsetYAsync(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetShadowOffsetYAsync(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetStrokeStyleAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetStrokeStyleAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetStrokeStyleAsync_System_String_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetStrokeStyleAsync(System.String)">
+  SetStrokeStyleAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetStrokeStyleAsync(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetTextAlignAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetTextAlignAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetTextAlignAsync_Blazor_Extensions_Canvas_Canvas2D_TextAlign_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetTextAlignAsync(Blazor.Extensions.Canvas.Canvas2D.TextAlign)">
+  SetTextAlignAsync(TextAlign)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetTextAlignAsync(TextAlign value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.TextAlign.html">TextAlign</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetTextBaselineAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetTextBaselineAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetTextBaselineAsync_Blazor_Extensions_Canvas_Canvas2D_TextBaseline_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetTextBaselineAsync(Blazor.Extensions.Canvas.Canvas2D.TextBaseline)">
+  SetTextBaselineAsync(TextBaseline)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetTextBaselineAsync(TextBaseline value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Blazor.Extensions.Canvas.Canvas2D.TextBaseline.html">TextBaseline</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetTransform_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetTransform*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetTransform_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetTransform(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+  SetTransform(double, double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void SetTransform(double m11, double m12, double m21, double m22, double dx, double dy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m11</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m12</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m21</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m22</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetTransformAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetTransformAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_SetTransformAsync_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.SetTransformAsync(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+  SetTransformAsync(double, double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetTransformAsync(double m11, double m12, double m21, double m22, double dx, double dy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m11</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m12</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m21</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m22</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Stroke_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Stroke*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Stroke" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Stroke">
+  Stroke()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Stroke()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeAsync" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeAsync">
+  StrokeAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StrokeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeRect_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeRect*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeRect_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeRect(System.Double,System.Double,System.Double,System.Double)">
+  StrokeRect(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void StrokeRect(double x, double y, double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeRectAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeRectAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeRectAsync_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeRectAsync(System.Double,System.Double,System.Double,System.Double)">
+  StrokeRectAsync(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StrokeRectAsync(double x, double y, double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeText_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeText*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeText_System_String_System_Double_System_Double_System_Nullable_System_Double__" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeText(System.String,System.Double,System.Double,System.Nullable{System.Double})">
+  StrokeText(string, double, double, double?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void StrokeText(string text, double x, double y, double? maxWidth = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>maxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeTextAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeTextAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_StrokeTextAsync_System_String_System_Double_System_Double_System_Nullable_System_Double__" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.StrokeTextAsync(System.String,System.Double,System.Double,System.Nullable{System.Double})">
+  StrokeTextAsync(string, double, double, double?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StrokeTextAsync(string text, double x, double y, double? maxWidth = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>maxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Transform_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Transform*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Transform_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Transform(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+  Transform(double, double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Transform(double m11, double m12, double m21, double m22, double dx, double dy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m11</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m12</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m21</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m22</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_TransformAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.TransformAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_TransformAsync_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.TransformAsync(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+  TransformAsync(double, double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task TransformAsync(double m11, double m12, double m21, double m22, double dx, double dy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m11</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m12</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m21</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>m22</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Translate_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Translate*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_Translate_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.Translate(System.Double,System.Double)">
+  Translate(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the async version instead, which is already called internally.&quot;)]
+public void Translate(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_TranslateAsync_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.TranslateAsync*"></a>
+
+  <h3 id="Blazor_Extensions_Canvas_Canvas2D_Canvas2DContext_TranslateAsync_System_Double_System_Double_" data-uid="Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.TranslateAsync(System.Double,System.Double)">
+  TranslateAsync(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task TranslateAsync(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

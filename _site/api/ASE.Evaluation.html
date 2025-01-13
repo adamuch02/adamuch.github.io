@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Evaluation | ASE </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Evaluation | ASE ">
+      
+      <meta name="description" content="An evaluation encompasses all things that can have a value, such as variables, expressions and conditions used in loops and ifs.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE">
+            ASE
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ASE.Evaluation">
+
+
+
+  <h1 id="ASE_Evaluation" data-uid="ASE.Evaluation" class="text-break">
+Class Evaluation  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ASE.html">ASE</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ASE.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An evaluation encompasses all things that can have a value, such as variables, expressions and conditions used in loops and ifs.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Evaluation : Command, ICommand</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="ASE.Command.html">Command</a></div>
+      <div><span class="xref">Evaluation</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="ASE.ICommand.html">ICommand</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="ASE.Array.html">Array</a></div>
+      <div><a class="xref" href="ASE.Int.html">Int</a></div>
+      <div><a class="xref" href="ASE.Real.html">Real</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ASE.Command.html#ASE_Command_ProcessParameters_System_String_">Command.ProcessParameters(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ASE.Command.html#ASE_Command_Set_ASE_StoredProgram_System_String_">Command.Set(StoredProgram, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ASE.Command.html#ASE_Command_Name">Command.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="ASE.Command.html#ASE_Command_ParameterList">Command.ParameterList</a>
+    </div>
+    <div>
+      <a class="xref" href="ASE.Command.html#ASE_Command_Parameters">Command.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="ASE.Command.html#ASE_Command_Program">Command.Program</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ASE_Evaluation__ctor_" data-uid="ASE.Evaluation.#ctor*"></a>
+
+  <h3 id="ASE_Evaluation__ctor" data-uid="ASE.Evaluation.#ctor">
+  Evaluation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructor assigns name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Evaluation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="ASE_Evaluation_evaluatedExpression" data-uid="ASE.Evaluation.evaluatedExpression">
+  evaluatedExpression
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string evaluatedExpression</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ASE_Evaluation_expression" data-uid="ASE.Evaluation.expression">
+  expression
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string expression</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ASE_Evaluation_value" data-uid="ASE.Evaluation.value">
+  value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int value</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ASE_Evaluation_varName" data-uid="ASE.Evaluation.varName">
+  varName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string varName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ASE_Evaluation_Expression_" data-uid="ASE.Evaluation.Expression*"></a>
+
+  <h3 id="ASE_Evaluation_Expression" data-uid="ASE.Evaluation.Expression">
+  Expression
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The right hand side of an expression in a variable initialisetion or variable change of value, or a boolean in a conditional command</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Expression { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ASE_Evaluation_Value_" data-uid="ASE.Evaluation.Value*"></a>
+
+  <h3 id="ASE_Evaluation_Value" data-uid="ASE.Evaluation.Value">
+  Value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Value of variable once the expression has been calculated. Virtual so that variables of other types can override it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ASE_Evaluation_VarName_" data-uid="ASE.Evaluation.VarName*"></a>
+
+  <h3 id="ASE_Evaluation_VarName" data-uid="ASE.Evaluation.VarName">
+  VarName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of variable as a string (as opposed to Name which is the name of the class, such as Int, Real or Boolean).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string VarName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ASE_Evaluation_scopeID_" data-uid="ASE.Evaluation.scopeID*"></a>
+
+  <h3 id="ASE_Evaluation_scopeID" data-uid="ASE.Evaluation.scopeID">
+  scopeID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>ID used for identifying the scope in which the variable exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int scopeID { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ASE_Evaluation_CheckParameters_" data-uid="ASE.Evaluation.CheckParameters*"></a>
+
+  <h3 id="ASE_Evaluation_CheckParameters" data-uid="ASE.Evaluation.CheckParameters">
+  CheckParameters()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Does nothing in this case.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task CheckParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Evaluation_Compile_" data-uid="ASE.Evaluation.Compile*"></a>
+
+  <h3 id="ASE_Evaluation_Compile" data-uid="ASE.Evaluation.Compile">
+  Compile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>assigns name and scopeID and adds to variable list in StoredProgram</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task Compile()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Evaluation_Evaluate_" data-uid="ASE.Evaluation.Evaluate*"></a>
+
+  <h3 id="ASE_Evaluation_Evaluate_System_String_ASE_StoredProgram_" data-uid="ASE.Evaluation.Evaluate(System.String,ASE.StoredProgram)">
+  Evaluate(string, StoredProgram)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluates a mathematical expression, static for use in other unrelated commands</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;double&gt; Evaluate(string expression, StoredProgram storedProgram)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The expression to be evaluated</p>
+</dd>
+    <dt><code>storedProgram</code> <a class="xref" href="ASE.StoredProgram.html">StoredProgram</a></dt>
+    <dd><p>The program in which to look for variables</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ASE.CommandException.html">CommandException</a></dt>
+    <dd><p>Thrown if a variable isn't found</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Evaluation_Execute_" data-uid="ASE.Evaluation.Execute*"></a>
+
+  <h3 id="ASE_Evaluation_Execute" data-uid="ASE.Evaluation.Execute">
+  Execute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the right hand side of the expression and assigns it to Value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task Execute()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ASE.CommandException.html">CommandException</a></dt>
+    <dd><p>Thrown if a variable in the expression isn't found</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Evaluation_Reassign_" data-uid="ASE.Evaluation.Reassign*"></a>
+
+  <h3 id="ASE_Evaluation_Reassign_System_String_ASE_StoredProgram_" data-uid="ASE.Evaluation.Reassign(System.String,ASE.StoredProgram)">
+  Reassign(string, StoredProgram)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Assigns a new value to a variable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task Reassign(string expression, StoredProgram storedProgram)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The expression containing the new value</p>
+</dd>
+    <dt><code>storedProgram</code> <a class="xref" href="ASE.StoredProgram.html">StoredProgram</a></dt>
+    <dd><p>Where to look for variables</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ASE.CommandException.html">CommandException</a></dt>
+    <dd><p>Thrown if variable is not found</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE-Classroom/ase-boose-assignment-adamuch02/blob/c311fe6f53cbd256c15cef6539876308f457f5a1/ASE/Evaluation.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1738 @@
+{
+  "source_base_path": "/home/adamfilipmuchowski/RiderProjects/ase-boose-assignment-adamuch02/ASE/bin/Debug/net8.0/DOCFX",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Array.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Array.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.BOOSEException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.BOOSEException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Canvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Canvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.CanvasCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.CanvasCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Circle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Circle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.CommandException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.CommandException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.CommandFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.CommandFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.CommandOneParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.CommandOneParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.CommandThreeParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.CommandThreeParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.CommandTwoParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.CommandTwoParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components.App.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components.Layout.MainLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components.Layout.MainLayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components.Layout.NavMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components.Layout.NavMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components.Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components.Layout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components.Pages.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components.Pages.Error.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components.Pages.Home.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components.Pages.Home.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components.Pages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components.Routes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components.Routes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components._Imports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components._Imports.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Components.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Components.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Else.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Else.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.End.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.End.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Evaluation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Evaluation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.FactoryException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.FactoryException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.For.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.For.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.ICanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.ICanvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.ICommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.ICommandFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.ICommandFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.IParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.IParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.IStoredProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.IStoredProgram.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.If.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.If.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Int.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Int.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.MoveTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.MoveTo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Parser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.ParserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.ParserException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Peek.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Peek.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.PenColour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.PenColour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Poke.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Poke.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Real.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Real.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Reassign.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Reassign.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Rect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Rect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.StoredProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.StoredProgram.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.StoredProgramException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.StoredProgramException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.While.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.While.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.Write.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.Write.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ASE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ASE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.AboutBOOSE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.AboutBOOSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Array.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Array.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.BOOSEException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.BOOSEException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Boolean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Boolean.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Call.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Call.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Canvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Canvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.CanvasCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.CanvasCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.CanvasException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.CanvasException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Cast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Cast.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Circle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Circle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.CommandException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.CommandException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.CommandFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.CommandFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.CommandOneParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.CommandOneParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.CommandThreeParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.CommandThreeParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.CommandTwoParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.CommandTwoParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.CompoundCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.CompoundCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.ConditionalCommand.conditionalTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.ConditionalCommand.conditionalTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.ConditionalCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.ConditionalCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.DrawTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.DrawTo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Else.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Else.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.End.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.End.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Evaluation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Evaluation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.FactoryException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.FactoryException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.For.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.For.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.ICanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.ICanvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.ICommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.ICommandFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.ICommandFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.IEvaluation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.IEvaluation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.IParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.IParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.IStoredProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.IStoredProgram.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.If.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.If.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Int.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Int.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Method.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Method.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.MoveTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.MoveTo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Parser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.ParserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.ParserException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Peek.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Peek.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.PenColour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.PenColour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Poke.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Poke.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Real.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Real.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Rect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Rect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.RestrictionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.RestrictionException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.StoredProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.StoredProgram.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.StoredProgramException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.StoredProgramException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.VarException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.VarException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.While.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.While.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.Write.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.Write.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.BECanvasComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.BECanvasComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.BECanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.BECanvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.Canvas2DContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.LineCap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.LineCap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.LineJoin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.LineJoin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.RepeatPattern.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.RepeatPattern.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.TextAlign.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.TextAlign.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.TextBaseline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.TextBaseline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.TextDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.TextDirection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Canvas2D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Model.TextMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Model.TextMetrics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.Model.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.BlendingEquation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.BlendingEquation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.BlendingMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.BlendingMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.BufferBits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.BufferBits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.BufferParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.BufferParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.BufferType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.BufferType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.BufferUsageHint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.BufferUsageHint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.CompareFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.CompareFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.DataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.DataType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.EnableCap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.EnableCap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.Error.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.Face.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.Face.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.FramebufferAttachment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.FramebufferAttachment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.FramebufferAttachmentParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.FramebufferAttachmentParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.FramebufferStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.FramebufferStatus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.FramebufferType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.FramebufferType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.FrontFaceDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.FrontFaceDirection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.HintMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.HintMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.HintTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.HintTarget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.Parameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.Parameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.PixelFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.PixelFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.PixelStorageMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.PixelStorageMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.PixelType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.PixelType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.Primitive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.Primitive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.ProgramParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.ProgramParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.RenderbufferFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.RenderbufferFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.RenderbufferParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.RenderbufferParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.RenderbufferType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.RenderbufferType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.ShaderParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.ShaderParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.ShaderPrecision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.ShaderPrecision.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.ShaderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.ShaderType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.StencilFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.StencilFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.Texture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.Texture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.Texture2DType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.Texture2DType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.TextureParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.TextureParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.TextureParameterValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.TextureParameterValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.TextureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.TextureType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.UniformType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.UniformType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.VertexAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.VertexAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.VertexAttributePointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.VertexAttributePointer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLActiveInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLActiveInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLBuffer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLContextAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLContextAttributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLFramebuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLFramebuffer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLProgram.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLRenderbuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLRenderbuffer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLShader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLShader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLShaderPrecisionFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLShaderPrecisionFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLTexture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLTexture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLUniformLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.WebGLUniformLocation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.WebGL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.WebGL.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.Canvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.Canvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.CanvasContextExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.CanvasContextExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.RenderingContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.RenderingContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blazor.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blazor.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
